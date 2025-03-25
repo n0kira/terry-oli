@@ -16,7 +16,7 @@ int main() {
     int T;
     cin >> T;
 
-    for(int t = 1; t <= T; t++) {
+    for (int t = 1; t <= T; t++) {
         solve(t);
     }
 }
