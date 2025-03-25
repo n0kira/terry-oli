@@ -2,10 +2,12 @@
 Appunti in preparazione alla fase territoriale delle Olimpiadi di Informatica 2025
 
 # Link utili:
-
 <li>
-   https://territoriali.olinfo.it/
+   Olinfo: https://training.olinfo.it/
 </li>
 <li>
-  https://training.olinfo.it/algobadge
+   Terry: https://territoriali.olinfo.it/
+</li>
+<li>
+  Algobadge: https://training.olinfo.it/algobadge
 </li>
