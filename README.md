@@ -4,6 +4,8 @@ Appunti in preparazione alla fase territoriale delle Olimpiadi di Informatica 20
 # Link utili:
 
 <li>
-  https://territoriali.olinfo.it/
+   https://territoriali.olinfo.it/
+</li>
+<li>
   https://training.olinfo.it/algobadge
 </li>
