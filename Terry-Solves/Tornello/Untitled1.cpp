@@ -6,25 +6,32 @@ int solve() {
     cin >> N;
 
     int risposta = 0;
+    vector<int> variazione(N);
 
-    for (int i=0; i<N; i++) {
-        vector<int> variazione;
-        cin >> variazione;
+    int S=0;
+
+    for(int i=0; i<N; i++) {
+        cin >> variazione[i];
     }
-    
-    for(int i=0; i<N; i++){
-    	if(variazione[i+1]!=variazione[i]){
-    		risposta++;
-		}else if(variazione[i+2]==variazione[i] && variazione[i]!=variazione[i+1]){
-			risposta++;
-		}else{
-			risposta+=variazione[i];
-		}
-	}
-    
-    
 
-    return risposta;
+    for(int i=0; i<N; i++){
+        if(variazione.size()>=3){
+            if(variazione[0]!=variazione[1] && variazione[0]==variazione[2]){
+                risposta++;
+                variazione.erase(variazione.begin(), variazione.begin()+3);
+            }
+        }else if(variazione.size()>=2){
+            if(variazione[0]!=variazione[1]){
+                risposta++;
+            }
+            variazione.erase(variazione.begin(), variazione.begin()+2);
+        }else{
+            risposta+=variazione[i];
+        }
+    }
+
+
+    return risposta+S;
 }
 
 int main() {
