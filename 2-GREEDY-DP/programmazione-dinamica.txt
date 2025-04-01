@@ -1,0 +1,21 @@
+fibonacci: 1 1 2 3 5 8 13 . . .
+
+Problema: Quale è l'iesimo numero della sequenza di fibonacci?
+
+Risoluzione: f(x) = { 1 se x <= 2 } oppure { f(x-1) + f(x-2) se x>2 }
+
+Esempio: f(4) = f(3)+f(2) = 3
+
+f(x) => O(2^x)
+
+per ogni f(x) partono 2 rami e così via fino ad arrivare a f(1) / f(2)
+
+quando x corrisonde ad un numero grande, significa che chiameremo molte volte lo stesso f(n) e
+al posto di ricalcolarlo ogni volta, possiamo salvare la sua soluzione in un array
+
+facendo così la complessità diventa O(n)
+
+
+
+---------------------------------------
+

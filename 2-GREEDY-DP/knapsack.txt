@@ -1,0 +1,15 @@
+Knapsack: N oggetti, ogniuno di peso Wi e valore Ci e uno zaino di capacità Wmax
+
+Domanda: Quale è la somma totale di valore di oggetti massima che posso scegliere selezionando un insieme
+di oggetti con somma pesi totale minore uguale a Wmax?
+-   0   1   2   3   4
+W:  5   2   5   2   7
+c:  3   5   5   1   8
+
+Wmax = 9
+
+Soluzione: Colonna 1 e 4 con C = 13
+
+Posso risolverlo usando le matrici
+
+Risposta = DP[N-1][Wmax];
