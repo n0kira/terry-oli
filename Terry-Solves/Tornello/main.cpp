@@ -6,23 +6,27 @@ int solve() {
     cin >> N;
 
     int risposta = 0;
-    int S = 0;
+    vector<int> variazione(N);
 
-    for (int i=0; i<N; i++) {
-        int variazione;
-        cin >> variazione;
+    int S=0;
 
-        // aggiungi codice...
-        risposta+=variazione;
+    for(int i=0; i<N; i++) {
+        cin >> variazione[i];
         
+        if(variazione[i]==1){
+            S++;
+            risposta=max(risposta, S);
+        }else if(variazione[i]==-1){
+            if(S>0){
+                S--;
+            }else{
+                risposta++;
+            }
+        }
     }
-    
-    if(N%2==0){
-        risposta++;
-    }
-    
 
-    return abs(risposta);
+
+    return risposta;
 }
 
 int main() {
